@@ -3,9 +3,22 @@
     <head>
         <title>Contenido HTML</title>
     </head>
-    <body>
-        <span><a href="../home.html">Inicio</a></span>
+    <body onload="logAccess('html')">
+        <div>
+            <ul>
+                <li><a href="../home.html">Inicio</a></li>
+                <li><a href="#">HTML</a></li>
+                <li><a href="css.html">CSS</a></li>
+                <li><a href="javaScrip.html">javaScrip</a></li>
+            </ul>
+        </div>
         <h1>HTML</h1>
+        <div>
+            <a href="#txtHipervinculo">Hiperv&iacute;nculo</a>
+            <a href="#txtVideo">Video</a>
+            <a href="#txtImagen">Imagen</a>
+            <a href="#txtElAtributoID">Atributo ID</a>
+        </div>
         <p>Es un lenguaje de marcado de Hipertexto</p>
         <p>Utiliza etiquetas para la estructura de la pgina web.</p>
         <hr>
@@ -22,6 +35,20 @@
         <p>Al ingresar imagenes se visualiza lo siguiente</p>
         <p>Ejemplo de imagen en la carpeta <b>imagenes</b></p>
         <img src="../images/_DSC8006.jpg" alt="imagenes" width="200" height="100">
-        
+        <hr>
+        <h2>Video</h2>
+        <video width="320" height="240" controls>
+            <source src="movie.mp4" type="video/mp4">
+            Internet en las cosas
+          </video>
+        <hr>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/FabboCTHdYg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    
+        <h4>El Atributo ID</h4>
+        <p>El atributo globar <b>id</b> define un identificador &uacute;ID, </p>
+        <p></p>
+        <footer>
+            <script src="../js/scrip-util.js"></script>
+        </footer>
     </body>
 </html>
