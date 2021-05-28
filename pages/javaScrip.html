@@ -23,6 +23,43 @@
         <p>Al dar click en el siguiente bot&iacute;on </p>
         <button id="btnClick" onclick="changeTitle()">Click! </button>    
          <br>   
+        <hr>
+        <h2>Ejercicios con operadores de javaScrip</h2>
+        <div>
+            <label for="txtNumero1">N_1</label>
+            <!--Imput es un elemento que permite Ingreso de Valores al Documento HTML-->
+            <!--DOM el arbol del html-->
+            <input type="number" min="1" max="127" value=1 name="txtNumero1" id="txtNumero1">
+        </div>
+        <div>
+            <label for="txtNumero2">N_2</label>
+            <input type="number" min="0" max="12" value=1 name="txtNumero2" id="txtNumero2">
+        </div>
+        <!--div sirve para -->
+        <div>
+            <button class="btn" id="btnOperarHTML" onclick="operar('Ha pulsado el boton HMTL')">Operar con HTML</button>
+            <!--br salto de linea-->
+            <br>
+           
+        </div>
+        <div>
+            <input class="btn" id="btnOperarInput" onclick="operar('Ha pulsado el boton Input')" type="button" value="Operar con Input">
+        </div>
+        <div>
+            <label for="txtResultadoSuma">Suma</label>
+            <!--readonly "solo lectura"-->
+            <input type="text" name="txtResultadoSuma" id="txtResultadoSuma" readonly>
+            <label for="txtResultadoResta">Resta</label>
+            <input type="text" name="txtResultadoResta" id="txtResultadoResta" readonly>
+        </div>
+        <div>
+            <label for="txtResultadoMulti">Multiplicacion</label>
+            <input type="text" name="txtResultadoMulti" id="txtResultadoMulti" readonly>
+            <label for="txtResultadoDiv">Division</label>
+            <input type="text" name="txtResultadoDiv" id="txtResultadoDiv" readonly>
+        </div>
+        <p id='txtDescripcin'></p>
+
         <footer>
             <!--Vinculacion de archivo-->
             <script src="../js/scrip-javaScrip.js"></script>
