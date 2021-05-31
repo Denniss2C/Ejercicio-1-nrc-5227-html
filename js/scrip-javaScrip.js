@@ -6,33 +6,37 @@ function changeTitle(){
 
 }
 
-
-function operar(tipo){
-    alert(tipo);
+function operar(tipo){    
     var t1 = document.getElementById('txtNumero1').value;
-    var t1 = document.getElementById('txtNumero2').value;
-    var n1 = parseInt(t1);
-    var n1 = parseInt(t2);
+    var t2 = document.getElementById('txtNumero2').value;
+    var n1 = parseInt(t1); //Convierte el valor String en Integer
+    var n2 = parseInt(t2); //Convierte el valor String en Integer
 
-    document.getElementById('txtResultadoSuma').value=sumar(n1,n2);
-    document.getElementById('txtResultadoResta').value=restar(n1,n2);
-    document.getElementById('txtResultadoMulti').value=multi(n1,n2);
-    document.getElementById('txtResultadoDiv').value=divi(n1,n2);
-
-    document.getElementById('txtDescripcion').innerHTML;
+    document.getElementById('txtResultadoSuma').value = sumar(n1, n2);    
+    document.getElementById('txtResultadoResta').value = restar(n1, n2);    
+    document.getElementById('txtResultadoMulti').value = multi(n1, n2);    
+    document.getElementById('txtResultadoDivi').value = divi(n1, n2);        
+    document.getElementById('txtDescripcion').innerHTML = tipo;
 }
 
-
-function sumar(n1,n2){
-    console.log('Sumar: '+n1 +'+'+ n2);
-    var r = n1+n2; //converte el String en entero
-    document.getElementById('txtResultadoSuma').value=r;
+function sumar(n1, n2){    
+    console.log('Sumar: ' + n1 + '+' + n2);
+    var r = n1 + n2; 
     return r;
 }
 
+function restar(n1, n2){    
+    console.log('Restar: ' + n1 + '-' + n2);
+    var r = n1 - n2;
+    return r;     
+}
 
-function restar(n1,n2){
-    console.log('Restar: '+n1 +'+'+ n2);
-    var r = n1-n2; //converte el String en entero
-    document.getElementById('txtResultadoResta').value=r;
+function multi(n1,n2){
+    var r = n1 * n2;
+    return r;
+}
+
+function divi(n1,n2){
+    var r = n1 / n2;
+    return r;
 }
